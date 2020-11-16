@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_item_linlayout_padding">5dp</dimen>
+    <dimen name="list_item_linlayout_iconinbox">25dp</dimen>
+    <dimen name="list_item_linlayout_iconfav">15dp</dimen>
+    <dimen name="list_item_linlayout_circle">15dp</dimen>
+    <dimen name="list_item_linlayout_marginright">10dp</dimen>
+    <dimen name="list_item_linlayout_tvdurasi">30dp</dimen>
+    <dimen name="list_item_textsize">14sp</dimen>
+
+    <dimen name="login_logo_emplus">40pt</dimen>
+    <dimen name="login_text_emplusmobile">30dp</dimen>
+    <dimen name="login_padding_bottom">100px</dimen>
+    <dimen name="login_margin">10dp</dimen>
+    <dimen name="login_margin_20">20dp</dimen>
+    <dimen name="login_textsize">20dp</dimen>
+    <dimen name="login_textsize_ubahperangkat">14dp</dimen>
+    <dimen name="login_button_height">35dp</dimen>
+
+    <dimen name="detail_textsize">14sp</dimen>
+    <dimen name="detail_margin_titik2">100dp</dimen>
+    <dimen name="detail_margin_isi">110dp</dimen>
+</resources>

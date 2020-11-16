@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <group
+                android:id="@+id/menu_top"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_urgent"
+                    android:icon="@mipmap/ic_urgent"
+                    android:drawablePadding="2dp"
+                    android:title="Kotak surat prioritas"
+                    app:actionViewClass="android.widget.TextView"
+                    />
+                <item
+                    android:id="@+id/nav_disposisi"
+                    android:icon="@mipmap/ic_disp"
+                    android:title="Kotak surat masuk"
+                    app:actionViewClass="android.widget.TextView"/>
+                <item
+                    android:id="@+id/nav_approve"
+                    android:icon="@mipmap/ic_approved"
+                    android:title="Kotak surat persetujuan"
+                    app:actionViewClass="android.widget.TextView"/>
+                <item
+                    android:id="@+id/nav_inboxHardcopy"
+                    android:title="Kotak surat versi cetak"
+                    android:icon="@mipmap/ic_hardcopy"
+                    app:actionViewClass="android.widget.TextView"/>
+                <item
+                    android:id="@+id/nav_inboxOnline"
+                    android:title="Kotak surat On line"
+                    android:icon="@mipmap/ic_online"
+                    app:actionViewClass="android.widget.TextView"/>
+                <item
+                    android:id="@+id/nav_newSuratMasuk"
+                    android:title="Registrasi surat masuk"
+                    android:icon="@mipmap/ic_surat_masuk"
+                    app:actionViewClass="android.widget.TextView"/>
+                <item
+                    android:id="@+id/nav_newSuratKeluar"
+                    android:title="Registrasi surat keluar"
+                    android:icon="@mipmap/ic_send"
+                    app:actionViewClass="android.widget.TextView"/>
+                <item
+                    android:id="@+id/nav_listDokumenSurat"
+                    android:title="Daftar semua surat"
+                    android:icon="@drawable/ic_listdokumen"
+                    app:actionViewClass="android.widget.TextView"/>
+                <item
+                    android:id="@+id/nav_sentItem"
+                    android:icon="@mipmap/ic_send"
+                    android:title="Surat terkirim"
+                    app:actionViewClass="android.widget.TextView"/>
+                <item
+                    android:id="@+id/nav_monitoring"
+                    android:icon="@drawable/ic_star_black"
+                    android:title="Favorit"
+                    app:actionViewClass="android.widget.TextView"/>
+                <item
+                    android:id="@+id/nav_trackingHistory"
+                    android:icon="@drawable/ic_tracking"
+                    android:title="Riwayat surat"
+                    app:actionViewClass="android.widget.TextView"/>
+                <item
+                    android:id="@+id/nav_changeRole"
+                    android:icon="@drawable/ic_face"
+                    android:title="Pilih peran" />
+                <!--<item
+                    android:id="@+id/nav_feedback"
+                    android:icon="@drawable/ic_feedback"
+                    android:title="Umpan Balik" />-->
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/ic_help"
+                    android:title="Tentang" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@mipmap/ic_logout"
+                    android:title="Keluar" />
+            </group>
+</menu>

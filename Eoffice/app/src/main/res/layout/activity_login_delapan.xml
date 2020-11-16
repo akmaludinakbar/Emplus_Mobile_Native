@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="bni.emplus.log"
+    android:background="@drawable/bglogin"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingBottom="100px">
+
+        <ImageView
+            android:layout_width="80pt"
+            android:layout_height="80pt"
+            android:src="@drawable/splashscreencopy"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/BNIlogo"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/eOfficeMobile"
+            android:paddingBottom="20dp"
+            android:layout_below="@+id/BNIlogo"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emplus"
+                android:textColor="#196b77"
+                android:textSize="60dp"
+                android:id="@+id/tvEoffice"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Mobile"
+                android:textColor="#e25220"
+                android:textSize="60dp"
+                android:id="@+id/tvMobile"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/eOfficeMobile"
+            android:id="@+id/textview"
+            android:background="@drawable/layout_abu"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/layout_bg">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="NPP"
+                    android:id="@+id/editNPP"
+                    android:maxLines="1"
+                    android:textColor="#000000"
+                    android:textSize="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:inputType="number" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:id="@+id/editPassword"
+                    android:textSize="40dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+                </android.support.v7.widget.AppCompatEditText>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textSize="40dp"
+                    android:background="#E55300"
+                    android:id="@+id/btLogin"
+                    android:layout_below="@+id/pass"
+                    android:text="Masuk"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
+

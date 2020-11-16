@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bni.emplus.DisposisiActivity">
+
+    <bni.emplus.slid
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_above="@+id/footerdetail"
+        android:layout_below="@+id/tabs"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        ></android.support.v4.view.ViewPager>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_star_white"
+        android:orientation="vertical"
+        android:layout_gravity="bottom|end"
+        app:elevation="0dp"
+        app:backgroundTint="#c8e5e5e5"
+        android:layout_marginBottom="@dimen/floating_bottom"
+        android:layout_marginRight="@dimen/floating_right"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+
+
+    <LinearLayout
+        android:id="@+id/footerdetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="4">
+        <Button
+
+            android:layout_height="wrap_content"
+            android:id="@+id/btTutupDisposisi"
+            android:text="Akhiri sirkulasi"
+            android:layout_weight="2"
+            android:background="#e5e5e5"
+            android:textColor="#444444"
+            android:layout_width="match_parent"
+            android:drawableTop="@drawable/ic_cancel"
+            android:padding="5dp"/>
+        <Button
+            android:layout_height="wrap_content"
+            android:id="@+id/btDisposisi"
+            android:layout_weight="2"
+            android:text="Teruskan sirkulasi"
+            android:background="#e5b652"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:drawableTop="@drawable/ic_send"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

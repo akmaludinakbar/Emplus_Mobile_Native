@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/login_margin"
+    android:paddingBottom="@dimen/login_margin">
+
+    <EditText
+        android:id="@+id/editNPP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="NPP"
+        android:textSize="@dimen/list_item_textsize"
+        android:inputType="number"
+        android:maxLines="1"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@id/editPass"
+        app:layout_constraintLeft_toLeftOf="@id/gLeft"
+        app:layout_constraintRight_toRightOf="@id/gRight"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editPass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="@dimen/list_item_textsize"
+        app:layout_constraintBottom_toTopOf="@id/editEmail"
+        app:layout_constraintLeft_toLeftOf="@id/gLeft"
+        app:layout_constraintRight_toRightOf="@id/gRight"
+        app:layout_constraintTop_toBottomOf="@id/editNPP" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="@dimen/list_item_textsize"
+        android:maxLines="1"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@id/editOTP"
+        app:layout_constraintLeft_toLeftOf="@id/gLeft"
+        app:layout_constraintRight_toRightOf="@id/gRight"
+        app:layout_constraintTop_toBottomOf="@id/editPass" />
+    <EditText
+        android:id="@+id/editOTP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="OTP"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="@dimen/list_item_textsize"
+        app:layout_constraintBottom_toTopOf="@id/btUbah"
+        app:layout_constraintTop_toBottomOf="@+id/editEmail"
+        app:layout_constraintLeft_toLeftOf="@id/gLeft"
+        app:layout_constraintRight_toLeftOf="@id/btRequestOTP" />
+    <Button
+        android:id="@+id/btRequestOTP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Request OTP"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/list_item_textsize"
+        app:layout_constraintRight_toRightOf="@id/gRight"
+        app:layout_constraintBottom_toTopOf="@id/btUbah"
+        app:layout_constraintTop_toBottomOf="@id/editEmail"
+        android:layout_marginBottom="@dimen/login_margin"/>
+    <Button
+        android:id="@+id/btUbah"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_margin"
+        android:background="@color/oren_button_login"
+        android:text="Ubah Perangkat"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/list_item_textsize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/gLeft"
+        app:layout_constraintRight_toRightOf="@id/gRight"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+</android.support.constraint.ConstraintLayout>

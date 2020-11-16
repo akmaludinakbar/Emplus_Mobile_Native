@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+
+    <!--Gambarnya-->
+    <!--<ImageView
+        android:id="@+id/ivKomen"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_komen"/>-->
+
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:paddingLeft="3dp"
+        android:id="@+id/framekomen"
+        >
+
+        <TextView
+            android:id="@+id/tvKomenDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="14px"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lines="1"
+            android:text="1"/>
+
+        <ImageView
+            android:id="@+id/ivKomen"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_komen"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+    <!--Title dan sub titlenya-->
+    <LinearLayout
+        android:id="@+id/linLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="5dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/framekomen">
+        <TextView
+            android:id="@+id/tvTanggalKomen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/tvPegawai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:id="@+id/tvIsiKomen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#878787"/>
+    </LinearLayout>
+
+</RelativeLayout>

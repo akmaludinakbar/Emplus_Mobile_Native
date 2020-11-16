@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bgsplash"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/sslayout"
+        android:paddingBottom="100dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/splashscreencopy"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/BNIlogo"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/eOfficeMobile"
+            android:layout_below="@+id/BNIlogo"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emplus"
+                android:textColor="#196b77"
+                android:textSize="30dp"
+                android:id="@+id/tvEoffice"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Mobile"
+                android:textColor="#e25220"
+                android:textSize="30dp"
+                android:id="@+id/tvMobile"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/sslayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="84dp" />
+</RelativeLayout>
+

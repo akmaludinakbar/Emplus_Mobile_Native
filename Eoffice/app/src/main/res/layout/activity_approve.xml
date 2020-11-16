@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bni.emplus.app">
+
+    <bni.emplus.slid
+        android:id="@+id/tabsapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pagerapp"
+
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        ></android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/btApproval"
+        android:layout_alignParentBottom="true"
+        android:weightSum="4">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btTolak"
+            android:layout_weight="2"
+            android:textColor="#ffffff"
+            android:background="#e5e5e5"
+            android:text="Tolak"
+            android:drawableTop="@drawable/ic_cancel"
+            android:padding="5dp"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btTerima"
+            android:layout_weight="2"
+            android:background="#e5b652"
+            android:textColor="#ffffff"
+            android:text="Setuju"
+            android:drawableTop="@drawable/ic_submit"
+            android:padding="5dp"/>
+    </LinearLayout>
+</LinearLayout>

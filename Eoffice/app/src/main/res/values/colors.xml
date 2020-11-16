@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#339baf</color>
+    <color name="colorPrimaryDark">#2584bb</color>
+    <color name="colorAccent">#e55300</color>
+    <color name="colorSolidLine">#f6bf26</color>
+    <color name="statusBarColor1">#26a6a9</color>
+
+    <!-- buat dots color gak aktif-->
+    <color name="dot_dark_screen">#82c1b6</color>
+    <color name="dot_dark_screen1">#fcbc04</color>
+    <color name="dot_dark_screen2">#079df4</color>
+    <color name="dot_dark_screen3">#79ab02</color>
+    <color name="dot_dark_screen4">#cc8711</color>
+    <color name="dot_dark_screen5">#82c1b6</color>
+
+    <!-- buat dots color aktif-->
+    <color name="dot_light_screen">#b7f2e8</color>
+    <color name="dot_light_screen1">#fad15a</color>
+    <color name="dot_light_screen2">#54befb</color>
+    <color name="dot_light_screen3">#cefc5e</color>
+    <color name="dot_light_screen4">#f1b247</color>
+    <color name="dot_light_screen5">#b7f2e8</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen</item>
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+        <item>@color/dot_light_screen5</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen</item>
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+        <item>@color/dot_dark_screen5</item>
+    </array>
+
+    <color name="black">#000000</color>
+    <color name="text_inbox_abu">#878787</color>
+    <color name="text_tosca_emplus">#196b77</color>
+    <color name="text_oren_mobile">#e25220</color>
+    <color name="oren_button_login">#E55300</color>
+
+
+</resources>

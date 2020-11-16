@@ -1,0 +1,20 @@
+<nav ng-class="getNavStylexx(scroll)" style="padding-left: 10px; width: 100%; height: auto; background-color: #339baf; position: absolute; top: 0px; left: 0px; z-index: 999; padding-top: 10px; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);">
+  <p style="color: #fafafa; font-family: Serif; font-size: 16px; font-weight: bold; display:inline-block;width:90%; white-space: nowrap;overflow:hidden !important;text-overflow: ellipsis;">{{pdfName}}</p>
+</nav>
+<div id="spacer" style="height: 30px"></div>
+
+<center>
+	<div id="loading" style="display: block; margin-top: 20%">{{loading}}</div>
+</center>
+<ion-scroll zooming="true" direction="xy" delegate-handle="zoom-pane" class="zoom-pane" min-zoom="1" scrollbar-x="false" scrollbar-y="false" overflow-scroll="false">
+	<canvas id="pdf" class="rotate0"></canvas>
+	<div id="watermark" style="z-index: 99 !important; height: 100vh; width: 100%; position: absolute; top: 0; left: 0; display: block; padding: 10px; -webkit-transform: rotate(-30deg); transform: rotate(-30deg);">
+	</div>
+</ion-scroll>
+<div style="position: absolute; bottom: 0; left: 0; width: 100%; height: auto; background-color: #ddd; padding-bottom: 5px;border-radius: 5px 5px 0 0;">
+	<div style="display: table; margin: 5px auto">
+		<button ng-click="goPrevious()" style="background-color: #e5b652; width: 40px;height: 40px;border-radius: 3px; border-color: #e2ad3c;"><span class="ion-ios-arrow-back" style="color: white"></span></button>
+		<span style="line-height: 30px; margin: 0 10px">Page: {{pageNum}} / {{pageCount}}</span>
+		<button ng-click="goNext()" style="background-color: #e5b652; width: 40px;height: 40px;border-radius: 3px;border-color: #e2ad3c;"><span class="ion-ios-arrow-forward" style="color: white"></span></button>
+	</div>
+</div>
